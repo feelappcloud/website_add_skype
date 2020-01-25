@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="layout" inherit_id="website.layout" active="True" customize_show="True" name="Skype">
+          <xpath expr="//t[@t-call='web.layout']" position="inside">
+              <span class="skype-button bubble" t-att-data-contact-id="res_company.skype_name"></span>
+              <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+          </xpath>
+        </template>
+    </data>
+</odoo>
